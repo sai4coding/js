@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Navigation Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Navigation bar styling */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .section {
+            padding: 20px;
+        }
+        /* Section styling */
+        .home {
+            background-color: #f4f4f4;
+            height: 300px;
+        }
+        .contact {
+            background-color: #eaeaea;
+            height: 300px;
+        }
+        .qa {
+            background-color: #dcdcdc;
+            height: 300px;
+        }
+        .matter {
+            background-color: #cfcfcf;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#qa">Q&A</a>
+        <a href="#matter">Matter</a>
+    </div>
+
+    <!-- Sections -->
+    <div class="section home" id="home">
+        <h2>Home Section</h2>
+        <p id="one" >Welcome to our website! This is the home section.</p>
+        <button onclick="change()">click here</button>
+    </div>
+
+    <div class="section contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>You can contact us at info@example.com.</p>
+    </div>
+
+    <div class="section qa" id="qa">
+        <h2>Q&A Section</h2>
+        <p>Frequently asked questions will be listed here.</p>
+    </div>
+
+    <div class="section matter" id="matter">
+        <h2>Matter Section</h2>
+        <p>This section contains important matter or information.</p>
+    </div>
+
+</body>
+<script>
+    function change(){
+       let fu=document.getElementById('one');
+       fu.textContent="hello";
+    }
+</script>
+</html>
